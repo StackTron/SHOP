@@ -63,7 +63,7 @@
     </header>
     
 <main>
-        <section class="brand">
+        <section class="brand wrp-show">
                 <img class="brand__img" src="./img/man.jpg" alt="man">
                     <div 
                         class="brand__wrp">
@@ -165,9 +165,11 @@
                                                     <button class="product__item-button">Add to Cart</button>
                                                 </li>
                         </ul>
+                        <div class="product__button-wrp">
                             <button
                                 class="product__button button--transperent">Browse All Product
                             </button>
+                        </div>
                     </section>
             <section class="information">
                 <ul class="information__blockquote">
@@ -178,14 +180,14 @@
                         <p class="information__text">
                             Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
                     </li>
-                        <li class="information__item-sales">
+                        <li class="information__item-free">
                             <img class="information__pic pic--center" src="./img/procent.svg" alt="procent">
                             <h3 class="information__item-title">
                             Sales & discounts</h3>
                             <p class="information__text">
                             Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
                             </li>
-                        <li class="information__item-quality">
+                        <li class="information__item-free">
                             <img class="information__pic" src="./img/king.svg" alt="king">
                             <h3 class="information__item-title">
                                 Quality assurance 
@@ -201,23 +203,24 @@
                 <section class="cart"> 
                     <ul class="cart__list"> 
                         <div class="cart__overlay"></div>
-                        <li class="cart__item">
-                            <img class="cart__img-item" src="./img/girl-footer.svg" alt="girl-footer">
-                            <p class="cart__text">
-                                “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
-                        </li>
-                            <li class="cart__item-subscribe">
-                                <h2 class="cart__info-title">
-                                    SUBSCRIBE</h2>
-                                    <h3 class="cart__item-caption">
-                                        for our newletter and promotion</h3>
-                                            <form action="#" class="cart__form-email">
-                                                <input class="input__email" type="email" placeholder="Enter Your Email">
-                                                <button class="input__submit" type="submit">Subscribe</button>
-                                            </form>
-                            </li>
-                                    <img src="./img/beach.png" alt="beach">
-                                        
+                            <div class="cart__item-block">
+                                <li class="cart__item">
+                                    <img class="cart__img-item" src="./img/girl-footer.svg" alt="girl-footer">
+                                    <p class="cart__text">
+                                        “Vestibulums quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+                                </li>
+                                    <li class="cart__item-subscribe">
+                                        <h2 class="cart__info-title">
+                                            SUBSCRIBE</h2>
+                                            <h3 class="cart__item-caption">
+                                                for our newletter and promotion</h3>
+                                                    <form action="#" class="cart__form-email">
+                                                        <input class="input__email" type="email" placeholder="Enter Your Email">
+                                                        <button class="input__submit" type="submit">Subscribe</button>
+                                                    </form>
+                                    </li>
+                            </div>      
+                                    <img class="cart__img" src="./img/beach.png" alt="beach">
                     </ul>
                 </section> 
                         <section class="copyright">
@@ -236,7 +239,7 @@
                                                     <img src="./img/twiter.svg" alt="twitter">
                                                 </a>
                             </div>
-                        </section>
+                        </section>                    
             </footer>
             <script src="./js/script.js"></script>
 </body>
