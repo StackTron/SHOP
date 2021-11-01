@@ -26,6 +26,7 @@
     .cart__item {
         position: absolute;
         width: 359px;
+        
     }
     
     .cart__item-subscribe {
@@ -81,16 +82,36 @@
 }
 
 @media (max-width: $tablet-width) {
-    
-    
+    .cart {
+        .cart__list {
+            height: 448px;
+        }
+        .cart__item-subscribe {
+            left: 209px;
+            bottom: 50px;
+        }
+        .cart__item {
+            left: 209px;
+            top: 54px;
+        }
+    }
 }
 
 @media (max-width: $mobile-width) {
     .cart {
-        max-height: 693px;
-        .cart__item {
-           
+            .cart__list {
+                height: 693px;
+            }
+            .cart__form-email {
+                width: 341px;
+            }
+            .cart__item-subscribe {
+                left: 15px;
+                bottom: 109px;
+            }
+            .cart__item {
+                left: 15px;
+                top: 54px;
+            }
         }
-    }
-    
 }

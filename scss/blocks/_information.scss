@@ -48,3 +48,15 @@
         font-weight: 300;
     }
 }
+
+@media (max-width: $tablet-width) {
+    
+    
+}
+
+@media (max-width: $mobile-width) {
+    .information {
+        height: 610px;
+    }
+    
+}

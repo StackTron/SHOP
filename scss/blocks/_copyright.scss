@@ -7,10 +7,33 @@
         font-size: 16px;
         line-height: 19px;
         color: $milk;
-        margin: 23px 0 0 235px;
+        margin: 23px 0 0 135px;
     }
     
     .copyright__link {
-        margin: 23px 0 0 655px;
+        margin-top: 23px;
+        margin-left: 455px;
+    
     }
+}
+
+@media (max-width: $tablet-width) {
+    .copyright {
+        height: 79px;
+        .copyright__link {
+            margin-left: 165px;
+            display: flex;
+        }
+    } 
+}
+
+@media (max-width: $mobile-width) {
+    .copyright {
+        flex-direction: column;
+        height: 143px;
+        .copyright__link {
+            margin-left: 114px;
+            display: flex;
+        }
+    } 
 }
