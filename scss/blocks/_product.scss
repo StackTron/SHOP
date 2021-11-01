@@ -2,15 +2,16 @@
     
 
     .product__heading {
+        align-items: center;
         color: $black;
         font-family: $font-lato;
         font-style: normal;
         font-weight: 400;
         font-size: 30px;
         line-height: 36px;
-        margin-top: 67px;
-        margin-bottom: 6px;
-        margin-left: 710px;
+        padding-top: 67px;
+        padding-bottom: 6px;
+        text-align: center;
     }
     
     .product__text {
@@ -20,17 +21,17 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 17px;
-        margin-left: 631px;
+        text-align: center;
+
     }
     
     .product__list {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        
-        margin-left: 230px;
-        margin-right: 230px;
-        margin-top: 48px;
+        left: 230px;
+        right: 230px;
+        top: 48px;
     
     }
     
@@ -101,29 +102,35 @@
     .product__button {
         font-size: 16px;
         line-height: 19px;
-        margin-top: 63px;
-        margin-left: 695px;
         border: 1px solid;
-        text-align: center;
-        width: 211px;
         padding: 14px 0 13px 0;
-    }
+        text-align: center;
+        height: 50px;
+        display:block;
+        margin:0 auto;
     
     .button--transperent:hover {
         background-color: $new-pink;
         color: $milk;
+        
     }
 }
 
 
-@media (max-width:1599px) {
-    width: 768px; 
+@media (max-width: $tablet-width) {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: $mobile-width) {
+.product {
+    margin: 0;
+    padding: 0;
+    max-width: 343px;
+}
     .product__list {
         flex-wrap: wrap;
+        margin: 0;
+    padding: 0;
     }
 }
-
+}

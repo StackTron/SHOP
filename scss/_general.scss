@@ -4,10 +4,11 @@
     font-style: normal;
     font-weight: 300;
     line-height: 17px;
+    width: 1600px;
 }
 
 .container {
-    width: 1600px;
+    width: 1140px;
     margin: 0 auto;
 }
 
@@ -25,14 +26,14 @@
 }
 
 
-@media (max-width:1599px) {
+@media (max-width: $tablet-width) {
     .container {
         width: 768px;
     }
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: $mobile-width) {
     .container {
         width: 375px;
     }
