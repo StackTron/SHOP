@@ -9,7 +9,7 @@
     
     .header__menu-overlay {
         position: absolute;
-        width: 1600px;
+        width: 50%;
         height: 840px;
         background: rgba(0, 0, 0, 0.5);
         display: none;
@@ -82,8 +82,24 @@
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: $tablet-width) {
     .header {
+        width: 768px;
+    }
+    .header__wrp-controls {
+        padding-left: 32px;
+        }
+        .header__menu {
+        padding-right: 32px; 
+        }
+        .header__menu-overlay {
+            max-height: 1px;
+        }
+        
+}
+@media (max-width: $mobile-width) {
+    .header {
+        width: 375px;
         .header__link {
             display: none;
         }
@@ -93,14 +109,5 @@
     }
     .header__wrp-controls {
             left: 16px;
-        }
-}
-
-@media (max-width: 1599px) {
-    .header__wrp-controls {
-        padding-left: 32px;
-        }
-        .header__menu {
-        padding-right: 32px; 
         }
 }
